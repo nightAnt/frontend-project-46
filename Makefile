@@ -11,7 +11,7 @@ gendiff:
 	node bin/gendiff.js
 
 test:
-	npm test
+	npm run test
 
 test-coverage:
 	npm test -- --coverage --coverageProvider=v8
