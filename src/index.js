@@ -20,7 +20,7 @@ const getDiff = (obj1, obj2) => {
     } else if (!Object.hasOwn(obj2, key)) {
       acc.push(`  - ${key}: ${obj1[key]}`);
     } else if (obj1[key] !== obj2[key]) {
-      acc.push(`  - ${key}: ${obj1[key]} \n  + ${key}: ${obj2[key]} `);
+      acc.push(`  - ${key}: ${obj1[key]}\n  + ${key}: ${obj2[key]}`);
     } else {
       acc.push(`    ${key}: ${obj1[key]}`);
     }
